@@ -1,3 +1,12 @@
+// package sequence builds a slice of positive integers out of its string
+// representation. The expected input is a comma-separated list of intervals.
+// An interval is either a number, or a pair of numbers separated by a dash.
+//
+// Example sequences and corresponding slice:
+//
+//    "1,3,6-8"           // [ 1 3 6 7 8 ]
+//    "121-119"           // [ 121 120 119 ]
+//    "1,2,2,2,2,2,2,6,2" // [ 1 2 2 2 2 2 2 6 2 ]
 package sequence
 
 import (
